@@ -3,15 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B88059036C214487C584C12 /* Pods_BitbucketRepos_BitbucketReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11021C7C6C4D44B53AEB4767 /* Pods_BitbucketRepos_BitbucketReposUITests.framework */; };
+		75A488FA0C53372766DF8B53 /* Pods_BitbucketRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7580AD3C0551A8A4179BC83A /* Pods_BitbucketRepos.framework */; };
+		866EF54616EA0BA87F6E4950 /* Pods_BitbucketReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA6A2EF43CE121A6BFD112B /* Pods_BitbucketReposTests.framework */; };
+		C33731ED2696FBE200A0DD4B /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731EC2696FBE200A0DD4B /* RepoTableViewCell.swift */; };
+		C33731F72696FC6D00A0DD4B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731F62696FC6D00A0DD4B /* RepoViewController.swift */; };
+		C337320126979B2B00A0DD4B /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337320026979B2B00A0DD4B /* RepoService.swift */; };
+		C337320226979B2B00A0DD4B /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337320026979B2B00A0DD4B /* RepoService.swift */; };
+		C337320326979B2B00A0DD4B /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337320026979B2B00A0DD4B /* RepoService.swift */; };
+		C337321B2697E34100A0DD4B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337321A2697E34100A0DD4B /* Repository.swift */; };
+		C337321C2697E34100A0DD4B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337321A2697E34100A0DD4B /* Repository.swift */; };
+		C337321D2697E34100A0DD4B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C337321A2697E34100A0DD4B /* Repository.swift */; };
+		C33732252698FED000A0DD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33732242698FED000A0DD4B /* Assets.xcassets */; };
+		C33732262698FED000A0DD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33732242698FED000A0DD4B /* Assets.xcassets */; };
+		C33732272698FED000A0DD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33732242698FED000A0DD4B /* Assets.xcassets */; };
+		C3373251269BD8FE00A0DD4B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731F62696FC6D00A0DD4B /* RepoViewController.swift */; };
+		C3373252269BD8FE00A0DD4B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731F62696FC6D00A0DD4B /* RepoViewController.swift */; };
 		C3B14C232696B4CC00FD44A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */; };
 		C3B14C252696B4CC00FD44A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C242696B4CC00FD44A9 /* SceneDelegate.swift */; };
-		C3B14C272696B4CC00FD44A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C262696B4CC00FD44A9 /* ViewController.swift */; };
 		C3B14C2A2696B4CC00FD44A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C282696B4CC00FD44A9 /* Main.storyboard */; };
-		C3B14C2C2696B4D200FD44A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C2B2696B4D200FD44A9 /* Assets.xcassets */; };
 		C3B14C2F2696B4D200FD44A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C2D2696B4D200FD44A9 /* LaunchScreen.storyboard */; };
 		C3B14C3A2696B4D300FD44A9 /* BitbucketReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C392696B4D300FD44A9 /* BitbucketReposTests.swift */; };
 		C3B14C452696B4D300FD44A9 /* BitbucketReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C442696B4D300FD44A9 /* BitbucketReposUITests.swift */; };
@@ -35,12 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E1CAEF3FD8A1FF30C4A946 /* Pods-BitbucketRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepos.release.xcconfig"; path = "Target Support Files/Pods-BitbucketRepos/Pods-BitbucketRepos.release.xcconfig"; sourceTree = "<group>"; };
+		0BA6A2EF43CE121A6BFD112B /* Pods_BitbucketReposTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitbucketReposTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11021C7C6C4D44B53AEB4767 /* Pods_BitbucketRepos_BitbucketReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitbucketRepos_BitbucketReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6E4C003A112E7383A67CFC /* Pods-BitbucketRepos-BitbucketReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepos-BitbucketReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-BitbucketRepos-BitbucketReposUITests/Pods-BitbucketRepos-BitbucketReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7580AD3C0551A8A4179BC83A /* Pods_BitbucketRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitbucketRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF413C8B99754B97B9F5E9B /* Pods-BitbucketRepos-BitbucketReposUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepos-BitbucketReposUITests.release.xcconfig"; path = "Target Support Files/Pods-BitbucketRepos-BitbucketReposUITests/Pods-BitbucketRepos-BitbucketReposUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AECD28EA584263D16F35B26E /* Pods-BitbucketReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketReposTests.debug.xcconfig"; path = "Target Support Files/Pods-BitbucketReposTests/Pods-BitbucketReposTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C33731EC2696FBE200A0DD4B /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		C33731F62696FC6D00A0DD4B /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
+		C337320026979B2B00A0DD4B /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
+		C337321A2697E34100A0DD4B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C33732242698FED000A0DD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B14C1F2696B4CC00FD44A9 /* BitbucketRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitbucketRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B14C242696B4CC00FD44A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3B14C262696B4CC00FD44A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3B14C292696B4CC00FD44A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3B14C2B2696B4D200FD44A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B14C2E2696B4D200FD44A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3B14C302696B4D200FD44A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B14C352696B4D200FD44A9 /* BitbucketReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitbucketReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +73,8 @@
 		C3B14C402696B4D300FD44A9 /* BitbucketReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitbucketReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B14C442696B4D300FD44A9 /* BitbucketReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitbucketReposUITests.swift; sourceTree = "<group>"; };
 		C3B14C462696B4D300FD44A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0096F84E0BE1BBBDF8F5ABF /* Pods-BitbucketReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketReposTests.release.xcconfig"; path = "Target Support Files/Pods-BitbucketReposTests/Pods-BitbucketReposTests.release.xcconfig"; sourceTree = "<group>"; };
+		E4B8620183BD6C50F4577942 /* Pods-BitbucketRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitbucketRepos.debug.xcconfig"; path = "Target Support Files/Pods-BitbucketRepos/Pods-BitbucketRepos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A488FA0C53372766DF8B53 /* Pods_BitbucketRepos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866EF54616EA0BA87F6E4950 /* Pods_BitbucketReposTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B88059036C214487C584C12 /* Pods_BitbucketRepos_BitbucketReposUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C33731F12696FBE900A0DD4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C337321A2697E34100A0DD4B /* Repository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C33731F22696FBF500A0DD4B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3373250269BD8F100A0DD4B /* ViewControllers */,
+				C33731EC2696FBE200A0DD4B /* RepoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C33731FF26979B0500A0DD4B /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				C337320026979B2B00A0DD4B /* RepoService.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		C3373250269BD8F100A0DD4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C33731F62696FC6D00A0DD4B /* RepoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3373259269BD91D00A0DD4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C3B14C282696B4CC00FD44A9 /* Main.storyboard */,
+				C3B14C2D2696B4D200FD44A9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		C3B14C162696B4CC00FD44A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +154,8 @@
 				C3B14C382696B4D300FD44A9 /* BitbucketReposTests */,
 				C3B14C432696B4D300FD44A9 /* BitbucketReposUITests */,
 				C3B14C202696B4CC00FD44A9 /* Products */,
+				D61BD47B0BA64FC9BB462DD7 /* Pods */,
+				CF0DB4C8D9E2F66F89F6B5BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +173,12 @@
 			isa = PBXGroup;
 			children = (
 				C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */,
+				C3373259269BD91D00A0DD4B /* Storyboards */,
+				C33731F22696FBF500A0DD4B /* Views */,
+				C33731FF26979B0500A0DD4B /* Webservices */,
+				C33731F12696FBE900A0DD4B /* Models */,
 				C3B14C242696B4CC00FD44A9 /* SceneDelegate.swift */,
-				C3B14C262696B4CC00FD44A9 /* ViewController.swift */,
-				C3B14C282696B4CC00FD44A9 /* Main.storyboard */,
-				C3B14C2B2696B4D200FD44A9 /* Assets.xcassets */,
-				C3B14C2D2696B4D200FD44A9 /* LaunchScreen.storyboard */,
+				C33732242698FED000A0DD4B /* Assets.xcassets */,
 				C3B14C302696B4D200FD44A9 /* Info.plist */,
 			);
 			path = BitbucketRepos;
@@ -128,6 +202,29 @@
 			path = BitbucketReposUITests;
 			sourceTree = "<group>";
 		};
+		CF0DB4C8D9E2F66F89F6B5BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7580AD3C0551A8A4179BC83A /* Pods_BitbucketRepos.framework */,
+				11021C7C6C4D44B53AEB4767 /* Pods_BitbucketRepos_BitbucketReposUITests.framework */,
+				0BA6A2EF43CE121A6BFD112B /* Pods_BitbucketReposTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D61BD47B0BA64FC9BB462DD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4B8620183BD6C50F4577942 /* Pods-BitbucketRepos.debug.xcconfig */,
+				09E1CAEF3FD8A1FF30C4A946 /* Pods-BitbucketRepos.release.xcconfig */,
+				4E6E4C003A112E7383A67CFC /* Pods-BitbucketRepos-BitbucketReposUITests.debug.xcconfig */,
+				7EF413C8B99754B97B9F5E9B /* Pods-BitbucketRepos-BitbucketReposUITests.release.xcconfig */,
+				AECD28EA584263D16F35B26E /* Pods-BitbucketReposTests.debug.xcconfig */,
+				D0096F84E0BE1BBBDF8F5ABF /* Pods-BitbucketReposTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B14C492696B4D300FD44A9 /* Build configuration list for PBXNativeTarget "BitbucketRepos" */;
 			buildPhases = (
+				9CB492774C708A592DD30933 /* [CP] Check Pods Manifest.lock */,
 				C3B14C1B2696B4CC00FD44A9 /* Sources */,
 				C3B14C1C2696B4CC00FD44A9 /* Frameworks */,
 				C3B14C1D2696B4CC00FD44A9 /* Resources */,
+				15B3DD81D5C3C5D3C920220D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B14C4C2696B4D300FD44A9 /* Build configuration list for PBXNativeTarget "BitbucketReposTests" */;
 			buildPhases = (
+				CA037C96C5D7AFF81332B609 /* [CP] Check Pods Manifest.lock */,
 				C3B14C312696B4D200FD44A9 /* Sources */,
 				C3B14C322696B4D200FD44A9 /* Frameworks */,
 				C3B14C332696B4D200FD44A9 /* Resources */,
@@ -170,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B14C4F2696B4D300FD44A9 /* Build configuration list for PBXNativeTarget "BitbucketReposUITests" */;
 			buildPhases = (
+				9B41A639A53DB29708BDDE36 /* [CP] Check Pods Manifest.lock */,
 				C3B14C3C2696B4D300FD44A9 /* Sources */,
 				C3B14C3D2696B4D300FD44A9 /* Frameworks */,
 				C3B14C3E2696B4D300FD44A9 /* Resources */,
+				9D3CFF5450D375695827C022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B14C2F2696B4D200FD44A9 /* LaunchScreen.storyboard in Resources */,
-				C3B14C2C2696B4D200FD44A9 /* Assets.xcassets in Resources */,
+				C33732252698FED000A0DD4B /* Assets.xcassets in Resources */,
 				C3B14C2A2696B4CC00FD44A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33732262698FED000A0DD4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,19 +351,126 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33732272698FED000A0DD4B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B3DD81D5C3C5D3C920220D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos/Pods-BitbucketRepos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos/Pods-BitbucketRepos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos/Pods-BitbucketRepos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B41A639A53DB29708BDDE36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitbucketRepos-BitbucketReposUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CB492774C708A592DD30933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitbucketRepos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3CFF5450D375695827C022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos-BitbucketReposUITests/Pods-BitbucketRepos-BitbucketReposUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos-BitbucketReposUITests/Pods-BitbucketRepos-BitbucketReposUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitbucketRepos-BitbucketReposUITests/Pods-BitbucketRepos-BitbucketReposUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA037C96C5D7AFF81332B609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitbucketReposTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3B14C1B2696B4CC00FD44A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B14C272696B4CC00FD44A9 /* ViewController.swift in Sources */,
+				C337320126979B2B00A0DD4B /* RepoService.swift in Sources */,
 				C3B14C232696B4CC00FD44A9 /* AppDelegate.swift in Sources */,
 				C3B14C252696B4CC00FD44A9 /* SceneDelegate.swift in Sources */,
+				C33731F72696FC6D00A0DD4B /* RepoViewController.swift in Sources */,
+				C33731ED2696FBE200A0DD4B /* RepoTableViewCell.swift in Sources */,
+				C337321B2697E34100A0DD4B /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +478,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C337320226979B2B00A0DD4B /* RepoService.swift in Sources */,
 				C3B14C3A2696B4D300FD44A9 /* BitbucketReposTests.swift in Sources */,
+				C337321C2697E34100A0DD4B /* Repository.swift in Sources */,
+				C3373251269BD8FE00A0DD4B /* RepoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +489,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C337320326979B2B00A0DD4B /* RepoService.swift in Sources */,
 				C3B14C452696B4D300FD44A9 /* BitbucketReposUITests.swift in Sources */,
+				C337321D2697E34100A0DD4B /* Repository.swift in Sources */,
+				C3373252269BD8FE00A0DD4B /* RepoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +649,7 @@
 		};
 		C3B14C4A2696B4D300FD44A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4B8620183BD6C50F4577942 /* Pods-BitbucketRepos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +669,7 @@
 		};
 		C3B14C4B2696B4D300FD44A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E1CAEF3FD8A1FF30C4A946 /* Pods-BitbucketRepos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +689,7 @@
 		};
 		C3B14C4D2696B4D300FD44A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECD28EA584263D16F35B26E /* Pods-BitbucketReposTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +712,7 @@
 		};
 		C3B14C4E2696B4D300FD44A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0096F84E0BE1BBBDF8F5ABF /* Pods-BitbucketReposTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +735,7 @@
 		};
 		C3B14C502696B4D300FD44A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6E4C003A112E7383A67CFC /* Pods-BitbucketRepos-BitbucketReposUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +756,7 @@
 		};
 		C3B14C512696B4D300FD44A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF413C8B99754B97B9F5E9B /* Pods-BitbucketRepos-BitbucketReposUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

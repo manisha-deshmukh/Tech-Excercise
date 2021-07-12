@@ -18,9 +18,25 @@ class BitbucketReposTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testREpositoryRequest() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var repositories: [Repository]?
+        
+        let expection = self.expectation(description: "loading repos")
+        
+        RepoService().requestRepositories("https://api.bitbucket.org/2.0/repositories") { (repositoryList, nextUrl) in
+            
+            guard let _ = repositoryList else {
+                expection.fulfill()
+                return
+            }
+            repositories = repositoryList!
+            expection.fulfill()
+        }
+        wait(for: [expection], timeout: 3)
+        XCTAssertNotNil(repositories)
+        XCTAssertTrue(repositories!.count > 0, "Repositories not present")
     }
 
     func testPerformanceExample() throws {

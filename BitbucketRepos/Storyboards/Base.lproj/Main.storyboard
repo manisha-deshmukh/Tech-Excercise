@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-s8-SmF">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepoTableViewCell" rowHeight="207" id="aig-9J-9qY" customClass="RepoTableViewCell" customModule="BitbucketRepos" customModuleProvider="target">
@@ -99,9 +99,6 @@
                                                                         <constraint firstAttribute="width" constant="30" id="l3b-jS-niu"/>
                                                                     </constraints>
                                                                     <state key="normal" backgroundImage="website"/>
-                                                                    <connections>
-                                                                        <segue destination="zcP-iU-cZl" kind="show" identifier="loadWebsite" id="oJh-WA-Ch2"/>
-                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,15 +172,9 @@
                                                                             <integer key="value" value="5"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
-                                                                    <connections>
-                                                                        <segue destination="zcP-iU-cZl" kind="show" identifier="loadRepo" id="nWx-ZH-YEN"/>
-                                                                    </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pj-a0-6F0">
                                                                     <rect key="frame" x="10" y="10" width="44.5" height="22"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="22" id="gbC-bf-Tb3"/>
-                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -243,27 +234,25 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="WBr-Mt-chP" id="6Wb-gU-wVl"/>
-                                    <outlet property="delegate" destination="WBr-Mt-chP" id="MQq-lN-tRj"/>
-                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-iZ-9NT">
-                                <rect key="frame" x="330" y="793" width="60" height="60"/>
+                                <rect key="frame" x="330" y="810" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" backgroundImage="next-button"/>
                                 <state key="selected" backgroundImage="next-button"/>
                                 <state key="highlighted" backgroundImage="next-button"/>
-                                <connections>
-                                    <action selector="nextBtnTapped:" destination="WBr-Mt-chP" eventType="touchUpInside" id="Uc1-2a-swF"/>
-                                </connections>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h6B-au-vzD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rYL-s8-SmF" firstAttribute="leading" secondItem="h6B-au-vzD" secondAttribute="leading" id="IBJ-Qm-UvC"/>
-                            <constraint firstAttribute="bottom" secondItem="rYL-s8-SmF" secondAttribute="bottom" id="cbI-cl-dvj"/>
+                            <constraint firstItem="h6B-au-vzD" firstAttribute="bottom" secondItem="rYL-s8-SmF" secondAttribute="bottom" id="cbI-cl-dvj"/>
                             <constraint firstItem="rYL-s8-SmF" firstAttribute="top" secondItem="h6B-au-vzD" secondAttribute="top" id="gFC-ea-W2H"/>
                             <constraint firstItem="rYL-s8-SmF" firstAttribute="trailing" secondItem="h6B-au-vzD" secondAttribute="trailing" id="oSs-VU-x44"/>
                         </constraints>
@@ -272,6 +261,7 @@
                     <connections>
                         <outlet property="nextBtn" destination="YRW-iZ-9NT" id="wwN-37-0w5"/>
                         <outlet property="tableView" destination="rYL-s8-SmF" id="qhf-mT-Pvk"/>
+                        <segue destination="zcP-iU-cZl" kind="show" identifier="loadWebpage" id="Sen-FT-pRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeM-Tl-xU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -307,12 +297,10 @@
                     <navigationItem key="navigationItem" id="osC-Sh-JQJ">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Udl-4B-aZv">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="backTapped:" destination="zcP-iU-cZl" id="WsS-iY-nEj"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backBtn" destination="Udl-4B-aZv" id="4V0-yH-Sba"/>
                         <outlet property="webView" destination="SAl-hu-zic" id="Ief-5f-Kn0"/>
                     </connections>
                 </viewController>
@@ -321,9 +309,6 @@
             <point key="canvasLocation" x="1492.753623188406" y="18.75"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nWx-ZH-YEN"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="next-button" width="48" height="48"/>
         <image name="website" width="50" height="50"/>

@@ -11,6 +11,7 @@ import SwiftyJSON
 
 class RepoService {
     
+    /*Fetch no of watchers, pull requests, commits and downloads count for each repo*/
     fileprivate func genericRequest(_ requestUrl: String, onCompletion: @escaping (Int)-> Void){
         
         AF.request(requestUrl).responseJSON { (response) in
@@ -30,9 +31,10 @@ class RepoService {
         }
     }
     
-    func downloadImage(_ requestUrl: String, imageCache:NSCache<NSURL, UIImage>, onCompletion: @escaping (UIImage)-> Void) {
+    /*Download images and save in Cache for future use*/
+    func downloadImage(_ requestUrl: String, imageCache:NSCache<NSURL, UIImage>?, onCompletion: @escaping (UIImage)-> Void) {
         
-        if let imageUrl = NSURL.init(string: requestUrl), let image = imageCache.object(forKey: imageUrl) {
+        if let imageUrl = NSURL.init(string: requestUrl), let image = imageCache?.object(forKey: imageUrl) {
             debugPrint("downloadImage: No need to convert: using alredy present one")
             onCompletion(image)
         }else{
@@ -42,7 +44,7 @@ class RepoService {
                     return
                 }
                 if let imageUrl = NSURL.init(string: requestUrl),  let downloadedImage = UIImage(data:imageData) {
-                    imageCache.setObject(downloadedImage, forKey: imageUrl)
+                    imageCache?.setObject(downloadedImage, forKey: imageUrl)
                     onCompletion(downloadedImage)
                 }else{
                     debugPrint("downloadImage: Error while converting image")
@@ -51,6 +53,7 @@ class RepoService {
         }
     }
     
+    /*Fetch repo details and next url for repositories*/
     func requestRepositories(_ requestUrl: String, onCompletion: @escaping ([Repository]?, String)-> Void)  {
         
         var repositoryDetails: [Repository] = []
@@ -115,6 +118,5 @@ class RepoService {
                 onCompletion(repositoryDetails, nextUrl)
             }
         })
-        
     }
 }

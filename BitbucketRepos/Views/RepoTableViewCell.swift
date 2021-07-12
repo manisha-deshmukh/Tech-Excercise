@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class RepoTableViewCell: UITableViewCell {
 
     static let Identifier = "RepoTableViewCell"
-   
+    private(set) var disposeBag = DisposeBag()
+    
     @IBOutlet weak var arrowImageView: UIImageView!
     
     @IBOutlet weak var ownerDetailsView: UIView!
@@ -28,8 +31,12 @@ class RepoTableViewCell: UITableViewCell {
     @IBOutlet weak var watchersIndicatorLbl: UILabel!
     @IBOutlet weak var moreBtn: UIButton!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
+    
     override func awakeFromNib() {
-        
         super.awakeFromNib()
         
         // Initialization code
@@ -59,9 +66,6 @@ class RepoTableViewCell: UITableViewCell {
             repoDetailsView.isHidden = false
             if let upArrow = UIImage.init(named: "collapse-arrow") {
                 arrowImageView.image = upArrow
-//                UIView.animate(withDuration: 0.2) {
-//                    arrowImageView.image = upArrow
-//                }
             }
         }else{
             repoDetailsView.isHidden = true
@@ -77,7 +81,7 @@ class RepoTableViewCell: UITableViewCell {
         ownerNameLbl.text = owner.name
         ownerTypeLbl.text = owner.type
         
-        //Format date before setting label.
+        //Format date before setting label
         let dateformatter =  DateFormatter()
         dateformatter.locale = Locale(identifier: "en_US_POSIX")
         dateformatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ss.SSSSZZZZZ"
@@ -91,12 +95,12 @@ class RepoTableViewCell: UITableViewCell {
             ownerCreationDateLbl.text = "Created on " + owner.creationDate
         }
         
-        //Set default image to avatar.
+        //Set default image to avatar
         if let defaultImage = UIImage.init(named: "default-"+owner.type) {
             ownerImageView.image = defaultImage
         }
         
-        //Show website button if website available.
+        //Show website button if website available
         websiteBtn.tag = cellIndex
         websiteBtn.isHidden = owner.website != "" ? false : true
     }

@@ -7,6 +7,9 @@ target 'BitbucketRepos' do
 
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxWebKit'
 
   # Pods for BitbucketRepos
 

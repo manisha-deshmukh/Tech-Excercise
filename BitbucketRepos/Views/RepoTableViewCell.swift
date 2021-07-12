@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class RepoTableViewCell: UITableViewCell {
+class RepoTableViewCell: UITableViewCell {
 
     static let Identifier = "RepoTableViewCell"
    
@@ -28,7 +28,7 @@ public class RepoTableViewCell: UITableViewCell {
     @IBOutlet weak var watchersIndicatorLbl: UILabel!
     @IBOutlet weak var moreBtn: UIButton!
     
-    public override func awakeFromNib() {
+    override func awakeFromNib() {
         
         super.awakeFromNib()
         
@@ -49,7 +49,7 @@ public class RepoTableViewCell: UITableViewCell {
         
     }
     
-    public override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         
         super.setSelected(selected, animated: animated)
 

@@ -54,15 +54,27 @@ class RepoViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if let destinationController = segue.destination as? WebViewController,
+           let button = sender as? UIButton, button.tag < repositoryDetails.count {
+        
+            //If 'loadRepo' is segue id, then set url to repo's url
+            let repository = repositoryDetails[button.tag]
+            
+            if segue.identifier == "loadRepo" {
+                destinationController.viewTitle = repository.projectName
+                destinationController.webViewUrl = repository.projectUrl
+            }else {
+                //If 'loadWebsite' is segue id, then set url to websites's url
+                let owner = repository.owner
+                destinationController.viewTitle = owner.name
+                destinationController.webViewUrl = owner.website
+            }
+        }
     }
- */
     
     // MARK: - Actions
     

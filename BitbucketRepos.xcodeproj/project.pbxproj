@@ -23,6 +23,9 @@
 		C33732272698FED000A0DD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33732242698FED000A0DD4B /* Assets.xcassets */; };
 		C3373251269BD8FE00A0DD4B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731F62696FC6D00A0DD4B /* RepoViewController.swift */; };
 		C3373252269BD8FE00A0DD4B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33731F62696FC6D00A0DD4B /* RepoViewController.swift */; };
+		C3373269269BE09100A0DD4B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3373268269BE09100A0DD4B /* WebViewController.swift */; };
+		C337326A269BE09100A0DD4B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3373268269BE09100A0DD4B /* WebViewController.swift */; };
+		C337326B269BE09100A0DD4B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3373268269BE09100A0DD4B /* WebViewController.swift */; };
 		C3B14C232696B4CC00FD44A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */; };
 		C3B14C252696B4CC00FD44A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B14C242696B4CC00FD44A9 /* SceneDelegate.swift */; };
 		C3B14C2A2696B4CC00FD44A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B14C282696B4CC00FD44A9 /* Main.storyboard */; };
@@ -61,6 +64,7 @@
 		C337320026979B2B00A0DD4B /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
 		C337321A2697E34100A0DD4B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		C33732242698FED000A0DD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3373268269BE09100A0DD4B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C3B14C1F2696B4CC00FD44A9 /* BitbucketRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitbucketRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B14C242696B4CC00FD44A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +120,6 @@
 		C33731F22696FBF500A0DD4B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C3373250269BD8F100A0DD4B /* ViewControllers */,
 				C33731EC2696FBE200A0DD4B /* RepoTableViewCell.swift */,
 			);
 			path = Views;
@@ -128,14 +131,6 @@
 				C337320026979B2B00A0DD4B /* RepoService.swift */,
 			);
 			path = Webservices;
-			sourceTree = "<group>";
-		};
-		C3373250269BD8F100A0DD4B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				C33731F62696FC6D00A0DD4B /* RepoViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C3373259269BD91D00A0DD4B /* Storyboards */ = {
@@ -173,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				C3B14C222696B4CC00FD44A9 /* AppDelegate.swift */,
+				C3373268269BE09100A0DD4B /* WebViewController.swift */,
+				C33731F62696FC6D00A0DD4B /* RepoViewController.swift */,
 				C3373259269BD91D00A0DD4B /* Storyboards */,
 				C33731F22696FBF500A0DD4B /* Views */,
 				C33731FF26979B0500A0DD4B /* Webservices */,
@@ -469,6 +466,7 @@
 				C3B14C232696B4CC00FD44A9 /* AppDelegate.swift in Sources */,
 				C3B14C252696B4CC00FD44A9 /* SceneDelegate.swift in Sources */,
 				C33731F72696FC6D00A0DD4B /* RepoViewController.swift in Sources */,
+				C3373269269BE09100A0DD4B /* WebViewController.swift in Sources */,
 				C33731ED2696FBE200A0DD4B /* RepoTableViewCell.swift in Sources */,
 				C337321B2697E34100A0DD4B /* Repository.swift in Sources */,
 			);
@@ -481,6 +479,7 @@
 				C337320226979B2B00A0DD4B /* RepoService.swift in Sources */,
 				C3B14C3A2696B4D300FD44A9 /* BitbucketReposTests.swift in Sources */,
 				C337321C2697E34100A0DD4B /* Repository.swift in Sources */,
+				C337326A269BE09100A0DD4B /* WebViewController.swift in Sources */,
 				C3373251269BD8FE00A0DD4B /* RepoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +491,7 @@
 				C337320326979B2B00A0DD4B /* RepoService.swift in Sources */,
 				C3B14C452696B4D300FD44A9 /* BitbucketReposUITests.swift in Sources */,
 				C337321D2697E34100A0DD4B /* Repository.swift in Sources */,
+				C337326B269BE09100A0DD4B /* WebViewController.swift in Sources */,
 				C3373252269BD8FE00A0DD4B /* RepoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
